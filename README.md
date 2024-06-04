@@ -41,6 +41,7 @@ npm i -D @types/express @types/body-parser @types/cookie-parser @types/compressi
 
 ###  body-parser vs express :
 <hr>
+
 Previously we used body-parser for parsing body data from request. But now it is a part of express. So, rather using:
 ```typescript
 app.use(bodyParser.json());
@@ -68,3 +69,5 @@ mongoose.connection.on('error', (error: Error) => {
     console.log(error)
 })
 ```
+
+***10.** Create the schema for various collection*
