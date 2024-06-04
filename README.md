@@ -1,3 +1,6 @@
+# Creating a Node.js server with Express and Typescript
+<br>
+
 *1. First run this command to initiate the **package.json** file*
 ```
 npm init -y
@@ -31,4 +34,15 @@ npm i -D express body-parser cookie-parser compression cors
 *5. Install the types for the dependencies*
 ```bash
 npm i -D @types/express @types/body-parser @types/cookie-parser @types/compression @types/cors
+```
+*6. Create src folder and inside create file named index.ts for the entry point of server.*
+
+###  body-parser vs express :
+Previously we used body-parser for parsing body data from request. But now it is a part of express. So, rather using:
+```typescript
+app.use(bodyParser.json());
+```
+we can simply use:
+```typescript
+app.use(express.json());
 ```
