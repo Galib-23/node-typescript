@@ -71,3 +71,5 @@ mongoose.connection.on('error', (error: Error) => {
 ```
 
 ***10.** Create the schema for various collection*
+
+***11.** Finally Create the necessary helpers and routes as required*
